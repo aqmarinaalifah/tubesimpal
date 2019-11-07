@@ -7,37 +7,68 @@
 </head>
 <body>
 	<style>
+	body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("assets/img/sekolah.jpg");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+
+  color: black;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
 		img {
-			
+			padding-top: 80px;
 			display: block;
 			margin-left: auto;
-			margin-right: auto;
-			width: 50%;
-			height: 50%;
-		}
-
-		body {
-			background-image: url("assets/img/bgwood.jpg");
-			background-size: cover;
-		}
-
-		b {
-			padding-left: 500px;
-		}
-
+  			margin-right: auto;
+  			width: 40%;
+  		}
 	</style>
-	<div class="container; text-center" style="padding-top: 80px">
-		<h1>Pendaftaran Murid Baru </h1>
-	</div>
-		<div class="container " style="margin-top:80px;">
-			<div class="text-center">
-				<img src="assets/img/logo.png" style="width: 50%, height:50%;" >
+	<div class="bg-image"></div>
+
+<div class="bg-text">
+<div class="container">
+			<img src="assets/img/logo.png">
+			<div class="container " style="padding-top: 80px">
+				<h3 class="text-center">SELEKSI MURID BARU TELKOM SCHOOLS</h3>
 			</div>
-			<div class="container " style="margin-top:80px;">
-			<b><a href="<?php echo site_url('register/') ?>" class="btn btn-sm btn-success">Sign Up</a></b>
-			<a href="<?php echo site_url('login/') ?>" class="btn btn-sm btn-success">Login</a>
+			<div class="container text-center" style="padding-top: 80px">
+				<a href="<?php echo site_url('login/') ?>" class="btn btn-md btn-success">Login</a>				
 			</div>
-		</div>
+	    </div>
+
+</div>
+		
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
