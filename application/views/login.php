@@ -78,25 +78,33 @@
             display: block;
             margin-top: 10px;
         }
+        .center {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
+        }
     </style>
 </head>
 <body>
 <div class="container" style="margin-top: 50px">
     <div class="row">
         <div class="col-sm-6 col-md-4 col-md-offset-4">
-            <h1 class="text-center login-title">LOGIN</h1>
             <?php if(isset($error)) { echo $error; }; ?>
             <div class="account-wall"> 
+                <img class="center" style="width:70%;" src="<?php echo base_url('assets/img/logo.png') ?>">
                 <form class="form-signin" method="POST" action="<?php echo base_url() ?>index.php/login">
-                <div class="form-group">
-                    <input type="text" class="form-control" name="username" placeholder="Username">
+                <div class="form-group" style="margin-bottom:0px">
+                    <h3>Username</h3>
+                    <input type="text" class="form-control" name="username" style="border-radius: 5px">
                     <?php echo form_error('username'); ?>
                 </div>
                 <div class="form-group">
-                    <input type="password" name="password" class="form-control" placeholder="password">
+                    <h3>Password</h3>
+                    <input type="password" name="password" class="form-control" style="border-radius: 5px;">
                     <?php echo form_error('password'); ?>
                 </div>
-
+                    <a href="<?php echo site_url('register/') ?>">Lupa Password?</a><br>
                 <button class="btn btn-lg btn-primary btn-block" name="btn-login" id="btn-login" type="submit">
                     Masuk</button>
             </div>
