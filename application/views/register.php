@@ -21,6 +21,14 @@
     <input type="text" name = "username" class="form-control" placeholder="Username" required />
   </div>
   <div class="form-group">
+    <label for="Nama">Nama :</label>
+    <input type="text" name = "nama" class="form-control" placeholder="Nama" required />
+  </div>
+  <div class="form-group">
+    <label for="Email">Email :</label>
+    <input type="email" name = "email" class="form-control" placeholder="Email" required />
+  </div>
+  <div class="form-group">
     <label for="Password">Password :</label>
     <input type="password" name = "password" class="form-control" placeholder="Password" required />
   </div>

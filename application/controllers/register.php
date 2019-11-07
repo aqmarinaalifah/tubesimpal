@@ -35,6 +35,8 @@ class register extends CI_Controller {
         $data = array(
 
             'username'    	=> $this->input->post("username"),
+            'nama'          => $this->input->post("nama"),
+            'email'         => $this->input->post("email"),
             'password'      => $this->input->post("password"),
 
         );

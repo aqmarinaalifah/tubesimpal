@@ -23,7 +23,7 @@ class Register_model extends CI_Model
         }
 
     }
-
+    
     // public function edit($id_user)
     // {
 
