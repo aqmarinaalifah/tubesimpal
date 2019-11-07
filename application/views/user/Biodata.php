@@ -26,11 +26,16 @@
   </div>
   <div class="form-group">
      <label for="Tanggal">Tanggal Lahir :</label>
-     <input type="date" name="tanggal" required />
+     <input type="text" name="tanggal" class="form-control" placeholder="Tanggal Lahir" required />
+  </div>
   </div>
   <div class="form-group">
     <label for="Alamat">Alamat :</label>
     <input type="text" name="alamat" class="form-control" placeholder="Alamat" required />
+  </div>
+  <div class="form-group">
+    <label for="email">Email :</label>
+    <input type="email" name="email" class="form-control" placeholder="Email" required />
   </div>
   <div class="form-group">
     <label for="gender">Jenis Kelamin :</label><br>
@@ -39,7 +44,7 @@
   </div>
   <div class="form-group">
     <label for="Nilai">Nilai UN :</label>
-    <input type="text" name="nilai" class="form-control" placeholder="ex : 32.00" required />
+    <input type="text" name="nilai" class="form-control" placeholder="ex : 8.00" required />
   </div>
   <div class="form-group">
     <input type="submit" class="btn btn-info"/>

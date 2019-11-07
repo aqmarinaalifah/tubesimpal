@@ -21,6 +21,7 @@ class Biodata extends CI_Controller {
             'tempat'        => $this->input->post("tempat"),
             'tanggal'    	=> $this->input->post("tanggal"),
             'alamat'        => $this->input->post("alamat"),
+            'email'         => $this->input->post("email"),
             'gender'        => $this->input->post("gender"),
             'nilai'         => $this->input->post("nilai"),
 

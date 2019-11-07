@@ -6,7 +6,9 @@ class Biodata_model extends CI_Model
     {
         $query = $this->db->select("*")
                  ->from('biodata')
-                 ->where("username ='" .$this->session->username."'")
+                 ->join('user')
+                 ->on('biodata.nama = user.nama')
+                 ->where("username ='".$this->session->username."'")
                  ->get();
         return $query->result();
     }
